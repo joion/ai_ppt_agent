@@ -5,8 +5,9 @@
 echo 'alias python3="/usr/local/bin/python3.12"' >> ~/.zshrc
 source ~/.zshrc
 
-cd ai_agent/test_demo
+cd ai_agent
 python3 -m venv .venv
 source .venv/bin/activate
-pip install openai python-dotenv
+pip install openai python-dotenv pyyaml
+cd test_demo
 python easy_chat.py
